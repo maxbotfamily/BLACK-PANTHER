@@ -20,7 +20,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+Asena.addCommand({pattern: 'tg ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.ADMİN,MessageType.text);
 
@@ -74,6 +74,7 @@ if (Config.LANG == 'ES') stag_dsc = 'Envía el mensaje de respuesta a todos los 
 if (Config.LANG == 'ML') stag_dsc = 'ഗ്രൂപ്പിലെ എല്ലാ അംഗങ്ങൾക്കും മറുപടി സന്ദേശം അയയ്ക്കുന്നു.'
 if (Config.LANG == 'ID') stag_dsc = 'Mengirim pesan balasan ke semua anggota dalam grup.'
 if (Config.LANG == 'PT') stag_dsc = 'Envia a mensagem respondida a todos os membros do grupo.'
+if (config.LANG == 'EN') stag_dsc = 'Sends the replied message to all members in the group.'
 
 Asena.addCommand({pattern: 'stam$', fromMe: true, desc: stag_dsc }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,SLang.NEED_REPLY, MessageType.text)
