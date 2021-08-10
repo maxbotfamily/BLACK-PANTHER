@@ -38,7 +38,7 @@ BLACK PANTHER bot විශේෂාංග මෙන්න.
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@phaticusthiccy/WhatsAsena-QR)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/maxbotfamily/BLACK-PANTHER-BOT.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/maxbotfamily/BLACK-PANTHER.git)
      </div>
 ### ⚠️ Warning! 
 ```
